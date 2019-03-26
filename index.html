@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>新生信息查询</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="stylesheet" href="css/weui.min.css">
+	<link rel="stylesheet" href="css/jquery-weui.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="page_hd">
+		<h1 class="page_title">新生信息查询</h1>
+		<p class="page_desc">新生信息查询 | 青春在线</p>
+	</div>
+	<div class="page_bd page__bd_spacing">
+		<div class="weui-cells__title">输入学号或考号</div>
+		<div class="weui-cells weui-cells_form">
+			<div class="weui-cell">
+				<div class="weui-cell__hd">
+					<label class="weui-label">证件号:</label>
+				</div>
+				<div class="weui-cell__bd">
+					<input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入学号或考号" id="kh">
+				</div>
+				<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_primary" id="chaxun">查询</a>
+			</div>
+		</div>
+		<div class="hidden">
+			<div class="weui-cells__title">新生信息</div>
+			<div class="weui-cell">
+				<div class="weui-cell__bd">
+					<p>姓名</p>
+				</div>
+				<div class="weui-cell__ft" id="name"></div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__bd">
+					<p>学号</p>
+				</div>
+				<div class="weui-cell__ft" id="sdut_id"></div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__bd">
+					<p>学院</p>
+				</div>
+				<div class="weui-cell__ft" id="college"></div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__bd">
+					<p>专业</p>
+				</div>
+				<div class="weui-cell__ft" id="major"></div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__bd">
+					<p>班级</p>
+				</div>
+				<div class="weui-cell__ft" id="class"></div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__bd">
+					<p>校区</p>
+				</div>
+				<div class="weui-cell__ft" id="school"></div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__bd">
+					<p>宿舍楼号</p>
+				</div>
+				<div class="weui-cell__ft" id="dormitory"></div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__bd">
+					<p>房间</p>
+				</div>
+				<div class="weui-cell__ft" id="room"></div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__bd">
+					<p>床位</p>
+				</div>
+				<div class="weui-cell__ft" id="bed"></div>
+			</div>
+			<div class="weui-form-preview__ft">
+				<a class="weui-form-preview__btn weui-form-preview__btn_primary" href="javascript:" onclick="scoreToggle()">查询舍友</a>
+			</div>
+		</div>
+
+			<div class="roommate" id="sheyou">
+				
+			</div>	
+	</div>
+
+	<div class="weui-footer">
+		<p class="weui-footer__licks">
+			<a href="http://www.youthol.cn/wechat" class="weui-footer__link">学生服务</a>
+		</p>
+		<p class="weui-footer__links">
+			<a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5NjM5NjkwMA==&scene=124#wechat_redirect" class="weui-footer__link">微信</a>
+			<a href="https://mp.qzone.qq.com/u/3355958247?uin=3355958247&is_famous_space=1&brand_flag=4" class="weui-footer__link">QQ</a>
+			<a href="https://weibo.com/youthonline" class="weui-footer__link">微博</a>
+			<a href="http://www.youthol.cn/about" class="weui-footer__link">关于我们</a>
+		</p>
+		<p class="weui-footer__text">Copyright © 2018 青春在线</p>
+	</div>
+	<script src="http://www.youthol.cn/wechat/dormitory/resource/js/weui.min.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-weui.min.js"></script>
+	<script src="js/js.js"></script>
+</body>
+
+</html>
